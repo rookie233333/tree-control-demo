@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script type="text/javascript" src="angular-tree-control/angular-tree-control.js"></script>
+
+    <!-- Include context-menu module if you're going to use menu-id attribute -->
+    <script type="text/javascript" src="angular-tree-control/context-menu.js"></script>
+
+    <!-- link for CSS when using the tree as a Dom element -->
+    <link rel="stylesheet" type="text/css" href="angular-tree-control/css/tree-control.css">
+
+    <!-- link for CSS when using the tree as an attribute -->
+    <link rel="stylesheet" type="text/css" href="angular-tree-control/css/tree-control-attribute.css">
+    <link  rel="stylesheet" type="text/css" href="css/tree.css">
+    <title>demo</title>
+    <style>
+        #myApp1,#myApp2{
+            float: left;
+            margin-right: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tree demo1 -->
+    <div id="myApp1" ng-app="myApp" ng-controller="treeDemo">
+        <h3>tree demo</h3>
+        <treecontrol class="tree-classic" 
+        tree-model="dataForTheTree" 
+        options="treeOptions"
+        on-selection="showSelected(node)" 
+        on-node-toggle="queryChildren(node)" 
+        selected-node="node"
+        expanded-nodes="expandArr">
+            <span class="tree-leaf-head" ng-click="expandedNode(node)"></span>
+            <span ng-bind="::node.CHNLNAME" ng-click="expandedNode(node)"></span>
+        </treecontrol>
+    </div>
+
+    <!-- tree demo2 -->
+    <div id="myApp2" ng-app="myApp2" ng-controller="treeDemo2">
+        <h3>tree demo2</h3>
+        <treecontrol class="tree-item" tree-model="dataForTheTree" options="treeOptions" on-selection="showSelected(node)" on-node-toggle="queryChildren(node)" selected-node="node">
+            <!-- <input type="checkbox" ng-checked="ischecked(node)" ng-disabled="isDisabled(node)"> -->
+            <span ng-click="selectedItem(node)">{{node.CHNLNAME}}</span>
+        </treecontrol>
+    </div>
+    <a href="https://github.com/wix/angular-tree-control">tree control</a>
+</body>
+<script type="text/javascript" src="./js/myApp1.js"></script>
+<script type="text/javascript" src="./js/myApp2.js"></script>
+<script>
+    //手动添加myApp2
+    angular.bootstrap(document.getElementById("myApp2"), ['myApp2']);
+</script>
+
+</html>

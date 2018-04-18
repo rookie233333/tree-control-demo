@@ -1,0 +1,59 @@
+{
+    "MSG": "操作成功",
+    "DATA": {
+        "DATA": [{
+            "ISDISTRIBUTABLE": "0",
+            "HASCHILDREN": "true",
+            "CHNLTYPE": "0",
+            "CHANNELID": "8088",
+            "CHNLDESC": "子栏目2",
+            "SITEID": "614",
+            "LINKURL": "",
+            "CHNLORDERBY": "",
+            "HASQUICKACTIONSRIGHT": {
+                "SOLOPUBLISH": "true",
+                "MOVEALL": "true",
+                "REMOVEALL": "true",
+                "COPYALL": "true"
+            },
+            "CHNLNAME": "子栏目2",
+            "CHNLDESCPINYIN": "zlm2",
+            "VIEWINFOID": "310",
+            "HASRIGHT": "true",
+            "PARENTID": "8087",
+            "CHNLQUERY": "",
+            "ISPUSHABLE": "0",
+            "CHNLORDER": "1"
+        },{
+            "ISDISTRIBUTABLE": "0",
+            "HASCHILDREN": "false",
+            "CHNLTYPE": "0",
+            "CHANNELID": "8088",
+            "CHNLDESC": "子栏目3",
+            "SITEID": "614",
+            "LINKURL": "",
+            "CHNLORDERBY": "",
+            "HASQUICKACTIONSRIGHT": {
+                "SOLOPUBLISH": "true",
+                "MOVEALL": "true",
+                "REMOVEALL": "true",
+                "COPYALL": "true"
+            },
+            "CHNLNAME": "子栏目3",
+            "CHNLDESCPINYIN": "zlm2",
+            "VIEWINFOID": "310",
+            "HASRIGHT": "true",
+            "PARENTID": "8087",
+            "CHNLQUERY": "",
+            "ISPUSHABLE": "0",
+            "CHNLORDER": "1"
+        }],
+        "PAGER": {
+            "ITEMCOUNT": 1,
+            "CURRPAGE": 1,
+            "PAGECOUNT": 1,
+            "PAGESIZE": 1000
+        }
+    },
+    "ISSUCCESS": "true"
+}

@@ -1,0 +1,143 @@
+//demo1
+//---------------
+treecontrol.tree-classic {
+    li {
+        line-height: 26px;
+        &.tree-collapsed {
+            &>i.tree-branch-head {
+                display: inline;
+                padding: 5px 10px;
+                background: url('../img/icon5.png')no-repeat;
+            }
+            &>i.tree-leaf-head {
+                display: none;
+            }
+            & span.tree-leaf-head {
+                //自定义图标
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/icon1.png')no-repeat;
+            }
+        }
+        &.tree-expanded {
+            &>i.tree-branch-head {
+                display: inline;
+                padding: 5px 10px;
+                background: url('../img/icon4.png')no-repeat;
+            }
+            &>i.tree-leaf-head {
+                display: none;
+            }
+            & span.tree-leaf-head {
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/icon2.png')no-repeat;
+            }
+        }
+        &.tree-leaf {
+            &>i.tree-branch-head {
+                display: inline;
+                padding: 5px 10px;
+                background: url('../img/icon3.png')5px no-repeat;
+            }
+            &>i.tree-leaf-head {
+                display: none;
+            }
+            & span.tree-leaf-head {
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/icon2.png')no-repeat;
+            }
+        }
+    }
+}
+
+//--------------
+//demo2
+treecontrol.tree-item {
+    li {
+        line-height: 32px;
+        &.tree-collapsed {
+            &>i.tree-branch-head {
+                display: inline;
+                padding: 5px 10px;
+                background: url('../img/icon8.png')no-repeat center;
+            }
+            &>i.tree-leaf-head {
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/s1.png')no-repeat center;
+            }
+        }
+        &.tree-expanded {
+            &>i.tree-branch-head {
+                display: inline;
+                padding: 5px 10px;
+                background: url('../img/icon9.png')no-repeat center;
+            }
+            &>i.tree-leaf-head {
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/s2.png')no-repeat center;
+            }
+        }
+        &.tree-leaf {
+            padding-left: 40px;
+            &>i.tree-branch-head {
+                display: none; // padding: 5px 10px;
+                // background: url('../img/icon3.png')5px no-repeat;
+            }
+            &>i.tree-leaf-head {
+                display: inline;
+                padding: 1px 10px;
+                background: url('../img/icon7.png')no-repeat center;
+            }
+        }
+    }
+    treeitem {
+        //2级
+        .set-tree-level(1);
+        treeitem {
+            //3级
+            .set-tree-level(2);
+            treeitem {
+                //4级
+                .set-tree-level(3);
+                treeitem {
+                    //5级
+                    .set-tree-level(4);
+                    treeitem {
+                        //6级
+                        .set-tree-level(5);
+                        treeitem {
+                            //7级
+                            .set-tree-level(6);
+                            treeitem {
+                                //8级
+                                .set-tree-level(7);
+                                treeitem {
+                                    //9级
+                                    .set-tree-level(8);
+                                    treeitem {
+                                        //10级
+                                        .set-tree-level(9);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*设置缩进*/
+    .set-tree-level(@n,
+    @step: 20px) {
+        i.tree-branch-head {
+            left: @step * ( @n - 1);
+        }
+        .tree-leaf {
+            padding-left: @step * (@n);
+        }
+    }
+}

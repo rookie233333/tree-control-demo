@@ -1,0 +1,36 @@
+{
+    "MSG": "操作成功",
+    "DATA": {
+        "DATA": [{
+            "ISDISTRIBUTABLE": "0",
+            "HASCHILDREN": "true",
+            "CHNLTYPE": "0",
+            "CHANNELID": "8087",
+            "CHNLDESC": "子栏目1",
+            "SITEID": "614",
+            "LINKURL": "",
+            "CHNLORDERBY": "",
+            "HASQUICKACTIONSRIGHT": {
+                "SOLOPUBLISH": "true",
+                "MOVEALL": "true",
+                "REMOVEALL": "true",
+                "COPYALL": "true"
+            },
+            "CHNLNAME": "子栏目1",
+            "CHNLDESCPINYIN": "zlm1",
+            "VIEWINFOID": "310",
+            "HASRIGHT": "true",
+            "PARENTID": "8084",
+            "CHNLQUERY": "",
+            "ISPUSHABLE": "0",
+            "CHNLORDER": "1"
+        }],
+        "PAGER": {
+            "ITEMCOUNT": 1,
+            "CURRPAGE": 1,
+            "PAGECOUNT": 1,
+            "PAGESIZE": 1000
+        }
+    },
+    "ISSUCCESS": "true"
+}

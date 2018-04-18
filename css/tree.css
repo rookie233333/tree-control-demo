@@ -1,0 +1,133 @@
+treecontrol.tree-classic li {
+  line-height: 26px;
+}
+treecontrol.tree-classic li.tree-collapsed > i.tree-branch-head {
+  display: inline;
+  padding: 5px 10px;
+  background: url('../img/icon5.png') no-repeat;
+}
+treecontrol.tree-classic li.tree-collapsed > i.tree-leaf-head {
+  display: none;
+}
+treecontrol.tree-classic li.tree-collapsed span.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/icon1.png') no-repeat;
+}
+treecontrol.tree-classic li.tree-expanded > i.tree-branch-head {
+  display: inline;
+  padding: 5px 10px;
+  background: url('../img/icon4.png') no-repeat;
+}
+treecontrol.tree-classic li.tree-expanded > i.tree-leaf-head {
+  display: none;
+}
+treecontrol.tree-classic li.tree-expanded span.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/icon2.png') no-repeat;
+}
+treecontrol.tree-classic li.tree-leaf > i.tree-branch-head {
+  display: inline;
+  padding: 5px 10px;
+  background: url('../img/icon3.png') 5px no-repeat;
+}
+treecontrol.tree-classic li.tree-leaf > i.tree-leaf-head {
+  display: none;
+}
+treecontrol.tree-classic li.tree-leaf span.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/icon2.png') no-repeat;
+}
+treecontrol.tree-item {
+  /*设置缩进*/
+}
+treecontrol.tree-item li {
+  line-height: 32px;
+}
+treecontrol.tree-item li.tree-collapsed > i.tree-branch-head {
+  display: inline;
+  padding: 5px 10px;
+  background: url('../img/icon8.png') no-repeat center;
+}
+treecontrol.tree-item li.tree-collapsed > i.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/s1.png') no-repeat center;
+}
+treecontrol.tree-item li.tree-expanded > i.tree-branch-head {
+  display: inline;
+  padding: 5px 10px;
+  background: url('../img/icon9.png') no-repeat center;
+}
+treecontrol.tree-item li.tree-expanded > i.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/s2.png') no-repeat center;
+}
+treecontrol.tree-item li.tree-leaf {
+  padding-left: 40px;
+}
+treecontrol.tree-item li.tree-leaf > i.tree-branch-head {
+  display: none;
+}
+treecontrol.tree-item li.tree-leaf > i.tree-leaf-head {
+  display: inline;
+  padding: 1px 10px;
+  background: url('../img/icon7.png') no-repeat center;
+}
+treecontrol.tree-item treeitem i.tree-branch-head {
+  left: 0px;
+}
+treecontrol.tree-item treeitem .tree-leaf {
+  padding-left: 20px;
+}
+treecontrol.tree-item treeitem treeitem i.tree-branch-head {
+  left: 20px;
+}
+treecontrol.tree-item treeitem treeitem .tree-leaf {
+  padding-left: 40px;
+}
+treecontrol.tree-item treeitem treeitem treeitem i.tree-branch-head {
+  left: 40px;
+}
+treecontrol.tree-item treeitem treeitem treeitem .tree-leaf {
+  padding-left: 60px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 60px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 80px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 80px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 100px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 100px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 120px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 120px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 140px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 140px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 160px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem i.tree-branch-head {
+  left: 160px;
+}
+treecontrol.tree-item treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem treeitem .tree-leaf {
+  padding-left: 180px;
+}
